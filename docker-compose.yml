@@ -1,0 +1,49 @@
+version: '3'
+
+services:
+
+  postgres:
+    image: postgres:11
+    env_file: ./config/env
+    volumes:
+      - ./pgdata:/var/lib/posgresql/data
+
+  backend:
+    image: tmdghks2735/choishblog_backend
+    build: 
+      context: ./choish-blog-backend
+    container_name: backend
+    volumes:
+      - ./choish-blog-backend:/home/blog/backend
+    env_file: ./config/env
+    working_dir: /home/blog/backend
+    ports: 
+      - 8000:8000
+    command: > 
+      bash -c "while ! nc -z postgres 5432; do echo sleeping; sleep 3; done; echo Connected! &&
+      python3 manage.py makemigrations &&
+      python3 manage.py migrate &&
+      python3 manage.py initadmin &&
+      python3 manage.py collectstatic --no-input &&
+      python3 manage.py runserver 0.0.0.0:8000"
+    depends_on: 
+      - postgres
+    links: 
+      - postgres
+    
+
+  frontend:
+    image: tmdghks2735/choishblog_frontend
+    build: ./choish-blog-frontend
+    container_name: frontend
+    volumes:
+      - ./choish-blog-frontend:/home/blog/frontend
+    working_dir: /home/blog/frontend
+    ports:
+      - 80:80
+    # stdin_open: true
+    # tty: true
+    # entrypoint: /bin/bash
+    links:
+      - backend
+

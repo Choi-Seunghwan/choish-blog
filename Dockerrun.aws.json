@@ -1,0 +1,64 @@
+{
+    "AWSEBDockerrunVersion": 2,
+    "containerDefinitions": [
+        {
+            "command": [
+                "bash",
+                "-c",
+                "python3 manage.py makemigrations && python3 manage.py migrate && python3 manage.py initadmin && python3 manage.py runserver 0.0.0.0:8000"
+            ],
+            "essential": true,
+            "image": "tmdghks2735/choishblog_backend",
+            "memory": "128",
+            "mountPoints": [
+                {
+                    "containerPath": "/home/blog/backend",
+                    "sourceVolume": "_Choish-Blog-Backend"
+                }
+            ],
+            "name": "backend",
+            "portMappings": [
+                {
+                    "containerPort": 8000,
+                    "hostPort": 8000
+                }
+            ]
+        },
+        {
+            "essential": true,
+            "image": "tmdghks2735/choishblog_frontend",
+            "memory": "128",
+            "links": [
+                "backend"
+            ],
+            "mountPoints": [
+                {
+                    "containerPath": "/home/blog/frontend",
+                    "sourceVolume": "_Choish-Blog-Frontend"
+                }
+            ],
+            "name": "frontend",
+            "portMappings": [
+                {
+                    "containerPort": 80,
+                    "hostPort": 80
+                }
+            ]
+        }
+    ],
+    "family": "",
+    "volumes": [
+        {
+            "host": {
+                "sourcePath": "/home/choi/project/choish-blog/choish-blog-backend"
+            },
+            "name": "_Choish-Blog-Backend"
+        },
+        {
+            "host": {
+                "sourcePath": "/home/choi/project/choish-blog/choish-blog-frontend"
+            },
+            "name": "_Choish-Blog-Frontend"
+        }
+    ]
+}
