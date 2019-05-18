@@ -5,7 +5,7 @@ it was developed using React, DRF (Django REST Framework).
 
 you can also use the Docker to deploy applications
 
-see the readme. You will know the deployment process.
+see the readme. you will know the deployment process.
 
 ## Demo
 [http://choiseunghwan.tk/](http://choiseunghwan.tk/)
@@ -26,6 +26,8 @@ see the readme. You will know the deployment process.
 * Django Rest Framework 3.9
 * PostgreSQL 11
 * Docker 18.09
+
+### Structure
 
 ## Getting Started
 
@@ -57,18 +59,22 @@ you can modify the image names of the frontend and backend by modifying the 'ima
 ## Deploying
 
 ### Modifying the env file
+
 you must modify the env file in the config folder before deployment.
 
 including secret keys and passwords in application code is a security risk. so, they are managed as environment variables in the env file.
 
-open env file.
-this is th secret key of django.
+
+#### Django Secret key
+show env file. this is th secret key of django.
 ```
-DJANGO_SECRETKEY= ...~~~~~
+DJANGO_SECRETKEY= THIS_IS_EXAMPLE_KEY=1s9&)l7!q-4#1q=46#5$=qv%1s01$05njw74+d#_w-5i$4ronEXAMPLE
 ```
 [Django Secret Key Generator](https://www.miniwebtool.com/django-secret-key-generator/) 
 you can generate a Django secret key from this website
 
+
+#### automatically generated django superuser
 this is the first automatically generated Django SuperUser. you can access the admin page with this auto-generated superuser.
 Change the password after connecting.
 ```
@@ -77,15 +83,17 @@ DJANGO_INITSUPERUSERPW=1234
 DJANGO_INITSUPERUSEREM=mymail@email.com
 ```
 
-#### Deploying with the docker
+### Deploying with the docker
 you can deploy the application by pulling the docker image from the server.
 
 1. push image to Docker Hub
 ```
 docker push frontendImageName (the image name you set)
+docker push backendImageName 
 ```
 2. pull image (on the server)
 ```
+docker pull frontendImageName 
 docker pull backendImageName 
 ```
 3. upload the docker-compose file and the config folder to the server (use something like github)
@@ -103,6 +111,6 @@ however, when adding content by drag-and-drop, there was an error when there was
 so I was very frustrated.
 i will redevelop the editor page and admin page using a different library.
 
-* tag list
-* category
-* other inconveniences found during use
+* tag list.
+* category.
+* other inconveniences found during use.
