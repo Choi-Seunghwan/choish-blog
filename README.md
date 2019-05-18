@@ -10,6 +10,8 @@ see the readme. you will know the deployment process.
 ## Demo
 [http://choiseunghwan.tk/](http://choiseunghwan.tk/)
 
+![demo](https://drive.google.com/uc?authuser=0&id=1s6p0U1nzaWUr1jU9xMVzCkhuotu1tFuv&export=download)
+
 ## Technologies
 
 ### Frontend
@@ -28,6 +30,10 @@ see the readme. you will know the deployment process.
 * Docker 18.09
 
 ### Structure
+
+![system_structure](https://drive.google.com/uc?authuser=0&amp;id=1r0ZBKiV8Cp2qU6eqrkssnMeGH0v5wTo0&amp;export=download)
+
+![docker](https://drive.google.com/uc?authuser=0&amp;id=1jhE25ICl2y1ZmxKYhmmxKcECqRBBWDjt&amp;export=download)
 
 ## Getting Started
 
