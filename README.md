@@ -10,7 +10,7 @@ see the readme. you will know the deployment process.
 ## Demo
 [http://choiseunghwan.tk/](http://choiseunghwan.tk/)
 
-![demo](https://drive.google.com/uc?authuser=0&id=1s6p0U1nzaWUr1jU9xMVzCkhuotu1tFuv&export=download)
+![demo](https://drive.google.com/uc?authuser=0&id=1s6p0U1nzaWUr1jU9xMVzCkhuotu1tFuv&export=download){:width="50%" height="50%"}
 
 ## Technologies
 
@@ -26,36 +26,25 @@ see the readme. you will know the deployment process.
 * Python 3.6
 * Django 2.2
 * Django Rest Framework 3.9
+
+### Others
 * PostgreSQL 11
 * Docker 18.09
 
 ### Structure
 
-![system_structure](https://drive.google.com/uc?authuser=0&amp;id=1r0ZBKiV8Cp2qU6eqrkssnMeGH0v5wTo0&amp;export=download)
+![system_structure](https://drive.google.com/uc?authuser=0&amp;id=1r0ZBKiV8Cp2qU6eqrkssnMeGH0v5wTo0&amp;export=download){:width="50%" height="50%"}
 
-![docker](https://drive.google.com/uc?authuser=0&amp;id=1jhE25ICl2y1ZmxKYhmmxKcECqRBBWDjt&amp;export=download)
+![docker](https://drive.google.com/uc?authuser=0&amp;id=1jhE25ICl2y1ZmxKYhmmxKcECqRBBWDjt&amp;export=download){:width="50%" height="50%"}
 
 ## Getting Started
 
 ### Installation
-1. git clone. be sure to get submodules with the --recursive option.
+1. git clone. be sure to use the --recursive option to get the submodules together
 ```
 git clone --recursive https://github.com/Choi-Seunghwan/choish-blog.git
 ```
-2. install the package to build react (node_modules folder is too large to push to github.)
-```
-cd choish-blog-frontend
-yarn install
-```
-3. build react
-```
-yarn build
-```
-4. return to choish-blog folder
-```
-cd ..
-```
-5. run docker-compose.
+2. run docker-compose.
 ```
 docker-compose up --build -d
 ```
