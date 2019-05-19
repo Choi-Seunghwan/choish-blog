@@ -10,7 +10,11 @@ see the readme. you will know the deployment process.
 ## Demo
 [http://choiseunghwan.tk/](http://choiseunghwan.tk/)
 
-![demo](https://drive.google.com/uc?authuser=0&id=1s6p0U1nzaWUr1jU9xMVzCkhuotu1tFuv&export=download){:width="50%" height="50%"}
+![demo](https://drive.google.com/uc?authuser=0&id=1s6p0U1nzaWUr1jU9xMVzCkhuotu1tFuv&export=download){: width="100%" height="100%"}
+
+<p align="center">
+  <img src="https://drive.google.com/uc?authuser=0&id=1s6p0U1nzaWUr1jU9xMVzCkhuotu1tFuv&export=download" width="600" title="demo">
+</p>
 
 ## Technologies
 
@@ -61,7 +65,7 @@ including secret keys and passwords in application code is a security risk. so, 
 
 
 #### Django Secret key
-show env file. this is th secret key of django.
+show env file. this is secret key of django.
 ```
 DJANGO_SECRETKEY= THIS_IS_EXAMPLE_KEY=1s9&)l7!q-4#1q=46#5$=qv%1s01$05njw74+d#_w-5i$4ronEXAMPLE
 ```
@@ -70,8 +74,8 @@ you can generate a Django secret key from this website
 
 
 #### automatically generated django superuser
-this is the first automatically generated Django SuperUser. you can access the admin page with this auto-generated superuser.
-Change the password after connecting.
+this is first automatically generated Django SuperUser. you can access admin page with this auto-generated superuser.
+Change password after connecting.
 ```
 DJANGO_INITSUPERUSER=user
 DJANGO_INITSUPERUSERPW=1234
