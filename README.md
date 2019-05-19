@@ -9,11 +9,8 @@ see the readme. you will know the deployment process.
 
 ## Demo
 [http://choiseunghwan.tk/](http://choiseunghwan.tk/)
-
-![demo](https://drive.google.com/uc?authuser=0&id=1s6p0U1nzaWUr1jU9xMVzCkhuotu1tFuv&export=download){: width="100%" height="100%"}
-
 <p align="center">
-  <img src="https://drive.google.com/uc?authuser=0&id=1s6p0U1nzaWUr1jU9xMVzCkhuotu1tFuv&export=download" width="600" title="demo">
+  <img src="https://drive.google.com/uc?authuser=0&id=1s6p0U1nzaWUr1jU9xMVzCkhuotu1tFuv&export=download" width="700" title="demo">
 </p>
 
 ## Technologies
@@ -37,9 +34,14 @@ see the readme. you will know the deployment process.
 
 ### Structure
 
-![system_structure](https://drive.google.com/uc?authuser=0&amp;id=1r0ZBKiV8Cp2qU6eqrkssnMeGH0v5wTo0&amp;export=download){:width="50%" height="50%"}
+<p align="center">
+  <img src="https://drive.google.com/uc?authuser=0&amp;id=1r0ZBKiV8Cp2qU6eqrkssnMeGH0v5wTo0&amp;export=download" width="700" title="system_structure">
+</p>
 
-![docker](https://drive.google.com/uc?authuser=0&amp;id=1jhE25ICl2y1ZmxKYhmmxKcECqRBBWDjt&amp;export=download){:width="50%" height="50%"}
+<p align="center">
+  <img src="https://drive.google.com/uc?authuser=0&amp;id=1jhE25ICl2y1ZmxKYhmmxKcECqRBBWDjt&amp;export=download" width="700" title="docker">
+</p>
+
 
 ## Getting Started
 
