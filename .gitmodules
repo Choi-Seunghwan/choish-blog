@@ -1,6 +1,0 @@
-[submodule "choish-blog-backend"]
-	path = choish-blog-backend
-	url = https://github.com/Choi-Seunghwan/choish-blog-backend.git
-[submodule "choish-blog-frontend"]
-	path = choish-blog-frontend
-	url = https://github.com/Choi-Seunghwan/choish-blog-frontend.git
