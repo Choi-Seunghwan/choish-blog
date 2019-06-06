@@ -16,7 +16,6 @@ see the readme. you will know the deployment process.
 ## Technologies
 
 ### Frontend
-* Node 8.10
 * React 16.8
 * Redux 4.0
 * Webpack 4.3
