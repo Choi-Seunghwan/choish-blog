@@ -102,15 +102,3 @@ docker pull backendImageName
 ```
 docker-compose up -d
 ```
-
-## Todo
-
-* add editor page and Admin Page (on frontend ).
-i had developed an editor using the react-draft-wysiwyg library.
-however, when adding content by drag-and-drop, there was an error when there was an image in the content.
-so I was very frustrated.
-i will redevelop the editor page and admin page using a different library.
-
-* tag list.
-* category.
-* other inconveniences found during use.
