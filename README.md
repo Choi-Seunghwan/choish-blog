@@ -30,6 +30,7 @@ see the readme. you will know the deployment process.
 ### Others
 * PostgreSQL 11
 * Docker 18.09
+* 
 
 ### Structure
 
