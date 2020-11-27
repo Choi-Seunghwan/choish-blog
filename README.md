@@ -8,9 +8,13 @@ you can also use the Docker to deploy applications
 see the readme. you will know the deployment process.
 
 ## Demo
-[http://choiseunghwan.tk/](http://choiseunghwan.tk/) <u>(현재 AWS 호스팅 중지 상태입니다.)</u>
+[Demo website](http://ec2-3-35-234-209.ap-northeast-2.compute.amazonaws.com/)
 <p align="center">
-  <img src="https://drive.google.com/uc?authuser=0&id=1s6p0U1nzaWUr1jU9xMVzCkhuotu1tFuv&export=download" width="700" title="demo">
+  <img src="https://lh3.google.com/u/0/d/107WQjNRUSQz23KKYcC0MyVbI1ElPhzjy=w1355-h859-iv1" width="700" title="demo1">
+</p>
+
+<p align="center">
+  <img src="https://lh3.google.com/u/0/d/14sa25BR_9ivjVQd7DysHktSIg6Kv12di=w1355-h859-iv1" width="700" title="demo2">
 </p>
 
 ## Technologies
